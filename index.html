@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Treehouse Massage - Expense</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+
+<h2>Expense</h2>
+
+<p>Treehouse Massage</p>
+
+
+<label>Branch</label>
+
+<select id="toko" onchange="loadBarang()">
+
+<option value="Karawaci">Karawaci</option>
+
+<option value="Glaze">Glaze</option>
+
+</select>
+
+
+<label>Date</label>
+
+<input
+type="date"
+id="tanggal">
+
+
+<label>Nama Barang</label>
+
+<input
+type="text"
+id="barang"
+list="listBarang">
+
+<datalist id="listBarang">
+</datalist>
+
+
+<label>QTY</label>
+
+<input
+type="number"
+id="jumlah">
+
+
+<label>Price</label>
+
+<input
+type="number"
+id="harga">
+
+
+<label>Invoice</label>
+
+
+<input
+type="file"
+id="kamera"
+accept="image/*"
+capture="environment"
+style="display:none"
+onchange="previewFoto(this)">
+
+
+<input
+type="file"
+id="galeri"
+accept="image/*"
+style="display:none"
+onchange="previewFoto(this)">
+
+
+<button
+type="button"
+onclick="document.getElementById('kamera').click()">
+
+📷 Scan
+
+</button>
+
+
+<br><br>
+
+
+<button
+type="button"
+onclick="document.getElementById('galeri').click()">
+
+🖼️ File
+
+</button>
+
+
+<br><br>
+
+
+<img id="preview">
+
+
+<button
+type="button"
+onclick="simpan()">
+
+Save
+
+</button>
+
+
+<button
+type="button"
+onclick="lihatData()">
+
+📋 LIHAT DATA
+
+</button>
+
+
+<div
+id="dataBarang"
+style="display:none; margin-top:20px;">
+
+
+<table id="tblData">
+
+
+<thead>
+
+<tr>
+
+<th>Tanggal</th>
+
+<th>Nota</th>
+
+<th>Barang</th>
+
+<th>Qty</th>
+
+<th>Harga</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="isiData">
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+<div id="status"></div>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
