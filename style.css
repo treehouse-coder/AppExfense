@@ -238,126 +238,156 @@ tr:nth-child(even){
   RESPONSIVE - HP
 ==================================================*/
 
-@media (max-width: 600px){
+@media (max-width:600px){
 
     body{
 
-        padding:10px;
+        margin:0;
 
-        min-height:100vh;
+        padding:8px;
+
+        min-width:650px;
 
     }
 
 
     .box{
 
-        width:100%;
+        width:650px;
 
         max-width:none;
 
         margin:0 auto;
 
-        padding:20px 16px;
+        padding:22px 18px;
 
         border-radius:18px;
 
-        box-shadow:
-            0 6px 20px
-            rgba(0,0,0,.20);
+        box-sizing:border-box;
 
     }
 
 
+    /*==============================================
+      HEADER
+    ==============================================*/
+
     h2{
 
-        margin:0 0 15px;
+        margin:0 0 8px;
 
-        font-size:34px;
+        font-size:30px;
 
-        letter-spacing:.5px;
+        line-height:1.1;
 
     }
 
 
     p{
 
-        margin:0 0 25px;
+        margin:0 0 22px;
 
-        font-size:34px;
+        font-size:30px;
 
-        letter-spacing:.5px;
+        line-height:1.1;
 
     }
 
+
+    /*==============================================
+      LABEL
+    ==============================================*/
 
     label{
 
         margin-bottom:6px;
 
-        font-size:20px;
+        font-size:17px;
 
     }
 
+
+    /*==============================================
+      INPUT
+    ==============================================*/
 
     input,
     select{
 
         width:100%;
 
-        padding:15px;
+        padding:13px 14px;
 
-        margin-bottom:18px;
+        margin-bottom:16px;
 
-        border:2px solid #C8E6C9;
+        border:1.5px solid #C8E6C9;
 
-        border-radius:12px;
+        border-radius:10px;
 
-        font-size:20px;
+        font-size:17px;
 
-    }
+        min-height:48px;
 
-
-    button{
-
-        width:100%;
-
-        padding:17px;
-
-        margin-top:6px;
-
-        border-radius:12px;
-
-        font-size:21px;
-
-    }
-
-
-    #preview{
-
-        width:100%;
-
-        max-height:350px;
-
-        object-fit:contain;
-
-        border-radius:12px;
-
-        margin-bottom:15px;
-
-    }
-
-
-    #status{
-
-        margin-top:15px;
-
-        font-size:18px;
+        box-sizing:border-box;
 
     }
 
 
     /*==============================================
-      TABEL
+      BUTTON
+    ==============================================*/
+
+    button{
+
+        width:100%;
+
+        padding:14px 12px;
+
+        margin-top:6px;
+
+        border-radius:10px;
+
+        font-size:18px;
+
+        min-height:48px;
+
+    }
+
+
+    /*==============================================
+      PREVIEW
+    ==============================================*/
+
+    #preview{
+
+        width:100%;
+
+        max-height:280px;
+
+        object-fit:contain;
+
+        border-radius:10px;
+
+        margin:4px 0 12px;
+
+    }
+
+
+    /*==============================================
+      STATUS
+    ==============================================*/
+
+    #status{
+
+        margin-top:14px;
+
+        font-size:16px;
+
+    }
+
+
+    /*==============================================
+      TABLE
     ==============================================*/
 
     #dataBarang{
@@ -366,27 +396,25 @@ tr:nth-child(even){
 
         overflow-x:auto;
 
-        -webkit-overflow-scrolling:touch;
-
     }
 
 
     table{
 
-        width:700px;
+        width:100%;
 
-        min-width:700px;
+        min-width:100%;
 
-        margin-top:15px;
+        margin-top:10px;
 
     }
 
 
     th{
 
-        padding:10px 8px;
+        padding:9px 7px;
 
-        font-size:15px;
+        font-size:14px;
 
         white-space:nowrap;
 
@@ -395,9 +423,9 @@ tr:nth-child(even){
 
     td{
 
-        padding:8px;
+        padding:8px 7px;
 
-        font-size:14px;
+        font-size:13px;
 
         white-space:nowrap;
 
