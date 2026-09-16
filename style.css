@@ -240,28 +240,31 @@ tr:nth-child(even){
 
 @media (max-width:600px){
 
+    html,
     body{
-
+        width:100%;
         margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
 
-        padding:8px;
 
-        min-width:650px;
-
+    body{
+        box-sizing:border-box;
     }
 
 
     .box{
 
-        width:650px;
+        width:100%;
 
         max-width:none;
 
-        margin:0 auto;
+        margin:0;
 
-        padding:22px 18px;
+        padding:20px 16px;
 
-        border-radius:18px;
+        border-radius:0;
 
         box-sizing:border-box;
 
@@ -303,6 +306,8 @@ tr:nth-child(even){
         margin-bottom:6px;
 
         font-size:17px;
+
+        line-height:1.2;
 
     }
 
@@ -383,11 +388,13 @@ tr:nth-child(even){
 
         font-size:16px;
 
+        line-height:1.4;
+
     }
 
 
     /*==============================================
-      TABLE
+      DATA
     ==============================================*/
 
     #dataBarang{
@@ -396,14 +403,20 @@ tr:nth-child(even){
 
         overflow-x:auto;
 
+        -webkit-overflow-scrolling:touch;
+
     }
 
 
+    /*==============================================
+      TABLE
+    ==============================================*/
+
     table{
 
-        width:100%;
+        width:650px;
 
-        min-width:100%;
+        min-width:650px;
 
         margin-top:10px;
 
